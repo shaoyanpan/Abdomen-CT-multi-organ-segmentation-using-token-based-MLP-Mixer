@@ -2,7 +2,7 @@
 **This is the repository for the paper "[Abdomen CT multi‐organ segmentation using token‐based MLP‐Mixer]"
 (https://aapm.onlinelibrary.wiley.com/doi/abs/10.1002/mp.16135)".**
 
-Notice the hyper-parameter might be a little bit different with my paper since my school does not grant me access to it. Sad.
+Notice in this github, the hyper-parameter might be a little bit different with my paper since my school does not grant me access to it. Sad. But the overall architecture and the final performance are very close to my paper.
 
 # Required packages
 
