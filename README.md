@@ -15,7 +15,9 @@ conda env create -f \your directory\environment.yaml
 
 # Required data saving format
 In default, your data should be saved as:
+
 ![dataformat](https://github.com/shaoyanpan/Abdomen-CT-multi-organ-segmentation-using-token-based-MLP-Mixer/assets/89927506/3dd16045-1d08-4aed-bc31-50f2f2a557d0)
+
 But feel free to change your directory as long as you change the data address in the "Set the data folder for data reading" section accordingly.
 
 # Usage
