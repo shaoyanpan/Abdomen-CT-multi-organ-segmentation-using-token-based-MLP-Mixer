@@ -13,6 +13,30 @@ Create an environment using Anaconda:
 conda env create -f \your directory\environment.yaml
 ```
 
+# Required data saving format
+In default, your data should be saved as:
+
+Train dataset
+.../data/imagesTr/
+    ---image1.nii.gz
+    ---image2.nii.gz
+    ....
+.../data/labelsTr/
+    ---label1.nii.gz
+    ---label2.nii.gz
+    ....
+
+Test dataset    
+.../data/imagesTs/
+    ---image1.nii.gz
+    ---image2.nii.gz
+    ....
+.../data/imagesTs/
+    ---label1.nii.gz
+    ---label2.nii.gz
+    ....
+
+
 
 # Usage
 
