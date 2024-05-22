@@ -18,12 +18,19 @@ In default, your data should be saved as:
 
 Train dataset
 .../data/imagesTr/
+
     ---image1.nii.gz
+    
     ---image2.nii.gz
+    
     ....
+    
 .../data/labelsTr/
+
     ---label1.nii.gz
+    
     ---label2.nii.gz
+    
     ....
 
 Test dataset    
