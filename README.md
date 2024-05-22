@@ -17,7 +17,7 @@ conda env create -f \your directory\environment.yaml
 In default, your data should be saved as:
 
 Train dataset
-.../data/imagesTr/
+data/imagesTr/
 
     image1.nii.gz
     
@@ -25,7 +25,7 @@ Train dataset
     
     ....
     
-.../data/labelsTr/
+data/labelsTr/
 
     label1.nii.gz
     
