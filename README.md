@@ -16,4 +16,31 @@ conda env create -f \your directory\environment.yaml
 
 # Usage
 
-The usage is in the jupyter notebook TDM main.ipynb. Including how to build a diffusion process, how to build a network, and how to call the diffusion process to train, and sample new synthetic images. However, we give simple example below:
+The usage is in the jupyter notebook TOKEN_MLP_MAIN.ipynb. Including data preprocessing (for CT as example), how to call the network (MLP_mixer.py), and how to train and evaluate it. Moreover, we give a simple example below if anyone just want to call the network:
+
+
+
+**Call the network**
+```
+# in_channels: color channel for the input, usually 1 for medical images
+# out_channels: number of the segmentation classes, # of organs + 1(background)
+# depth: depth of the network
+# feature_size: Token size, controling how dense of the information extracted by the token. Larger -> more information, but easier to overfit.
+# hidden_size: Layer size, similar to the convolutional channel in CNNs. Larger -> more information, but easier to overfit.
+# But notice, hidden_size = 512 means 64,128,256,512 since depth = 4.
+# mlp_dim: MLP layer size in the MLP_Mixer, controling how much you want to learn from the token. Larger -> more information, but easier to overfit.
+
+from MLP_mixer import *
+model =  MLP_MIXER(
+    in_channels=1,
+    out_channels=class_num,
+    depth = 4,
+    feature_size=512,
+    hidden_size=512,
+    mlp_dim=512,
+).to(device)
+
+```
+
+# Visual examples for CT organ segmentation
+![Figure  3](https://github.com/shaoyanpan/Abdomen-CT-multi-organ-segmentation-using-token-based-MLP-Mixer/assets/89927506/f1f7c188-6034-42f7-aadb-c620f41ee004)
