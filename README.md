@@ -15,35 +15,8 @@ conda env create -f \your directory\environment.yaml
 
 # Required data saving format
 In default, your data should be saved as:
-
-Train dataset
-data/imagesTr/
-
-    image1.nii.gz
-    
-    image2.nii.gz
-    
-    ....
-    
-data/labelsTr/
-
-    label1.nii.gz
-    
-    label2.nii.gz
-    
-    ....
-
-Test dataset    
-.../data/imagesTs/
-    ---image1.nii.gz
-    ---image2.nii.gz
-    ....
-.../data/imagesTs/
-    ---label1.nii.gz
-    ---label2.nii.gz
-    ....
-
-
+![dataformat](https://github.com/shaoyanpan/Abdomen-CT-multi-organ-segmentation-using-token-based-MLP-Mixer/assets/89927506/3dd16045-1d08-4aed-bc31-50f2f2a557d0)
+But feel free to change your directory as long as you change the data address in the "Set the data folder for data reading" section accordingly.
 
 # Usage
 
