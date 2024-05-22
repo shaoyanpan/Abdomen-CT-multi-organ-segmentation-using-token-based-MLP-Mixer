@@ -1,16 +1,16 @@
 # Abdomen-CT-multi-organ-segmentation-using-token-based-MLP-Mixer
-**This is the repository for the paper "[Abdomen CT multi‐organ segmentation using token‐based MLP‐Mixer]"
+**This is the official repository for the paper "[Abdomen CT multi‐organ segmentation using token‐based MLP‐Mixer]"
 (https://aapm.onlinelibrary.wiley.com/doi/abs/10.1002/mp.16135)".**
 
 Notice in this github, the hyper-parameter might be a little bit different with my paper since my school does not grant me access to it. Sad. But the overall architecture and the final performance are very close to my paper.
 
 # Required packages
 
-The requires packages are in test_env.yaml.
+The requires packages are in environment.yaml.
 
 Create an environment using Anaconda:
 ```
-conda env create -f \your directory\test_env.yaml
+conda env create -f \your directory\environment.yaml
 ```
 
 
